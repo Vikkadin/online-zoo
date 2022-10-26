@@ -2,3 +2,8 @@ h1 {
     text-align: center;
     color: tomato
 }
+
+.hero-container {
+    min-height: 100vh;
+    height: 100%;
+}
