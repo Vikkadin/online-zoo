@@ -9,6 +9,7 @@
     --light_gray: #F1F3F2;
     --dark-orange-gr: linear-gradient(113.96deg, #E47209, #E47209 101.44%);
     --orange-gr: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    --light-orange_gr: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     --pink_gr: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     --red: #D31414;
 }
@@ -37,6 +38,7 @@ h3 {
     font-weight: 400;
     font-size: 36px;
     line-height: 130%;
+    text-align: center;
 }
 
 h4 {
@@ -55,6 +57,10 @@ h4 {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+p {
+    margin: 0;
 }
 
 @font-face {

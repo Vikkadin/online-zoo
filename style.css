@@ -101,7 +101,6 @@
 }
 
 
-
 .animals_cards {
     padding: 88px 0 100px 0;
     background: url(./assets/images/strelitzia.png) right bottom,
@@ -213,13 +212,34 @@
     transition: 0.3s;
 }
 
+.animal-card:hover:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 5);
+    z-index: 200;
+    opacity: 0;
+}
+
+.animal-card:hover::before {
+    opacity: 0.5;
+}
+
 .animal-img {
     width: 100%;
     height: 368px;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 100;
     transition: 0.5s;
+}
+
+.animal-img:hover {
+    background-size: 110%;
 }
 
 .animal-1 {
@@ -300,34 +320,29 @@
     z-index: 1;
 }
 
-.choose-bun {
+.choose-btn,
+.pick-and-feed_btn {
     align-self: center;
 }
 
-.card:before,
+
 .card:after {
     content: '';
     transform: scale(0);
     transform-origin: bottom left;
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    right: -20%;
+    top: 60%;
+    right: -40%;
     z-index: 0;
-    transition: all ease-in-out 0.5s;
-}
-
-.card:before {
-    background: var(--yellow);
-    width: 140%;
-    height: 140%;
-    opacity: 0.7;
+    transition: all ease-in 0.5s;
 }
 
 .card:after {
     background: var(--orange-gr);
     width: 200%;
     height: 200%;
+    z-index: 200;
 }
 
 .card:hover:before,
@@ -336,13 +351,109 @@
 }
 
 .card:hover .animal-card-group {
-    top: -30px;
+    top: -70px;
     z-index: 500;
     transition: 0.7s;
     font-size: 180%;
-    background-color: var(--yellow);
+    color: var(--white);
 }
 
 .card:hover .food-logo {
     opacity: 0;
+}
+
+.pick-and-feed {
+    padding: 69px 0 100px 0;
+    background: var(--light-orange_gr);
+}
+
+.pick-and-feed-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 41px 0 59px 0;
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+
+.pick-and-feed-block h3 {
+    margin-bottom: 10px;
+}
+
+.pick-and-feed-title {
+    text-align: center;
+    color: var(--orange);
+}
+
+.pick-and-feed-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding-left: 99px;
+    line-height: 130%;
+}
+
+.pick-and-feed-group a {
+    text-decoration: underline;
+    text-decoration-color: #FE9013;
+    text-underline-offset: 7px;
+}
+
+.pick-and-feed-group h4 {
+    margin-bottom: 30px;
+}
+
+.pick-and-feed-accent {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.pick-and-feed-widjet-block {
+    margin-bottom: 10px;
+}
+
+.pick-and-feed-widjets {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.pick-and-feed-widjet {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 168px;
+    margin-bottom: 30px;
+}
+
+.pick-and-feed-icon {
+    width: 168px;
+    height: 168px;
+    background-color: #FFFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+}
+
+.pick-and-feed-icon1 {
+    background-image: url(./assets/icons/pay.svg);
+}
+
+.outline-arrow {
+    width: 130px;
+    background: url(./assets/icons/outline-arrow.svg);
+    background-position: top 60px center;
+    background-repeat: no-repeat;
+}
+
+.pick-and-feed-icon2 {
+    background-image: url(./assets/icons/zoo.svg);
+}
+
+.pick-and-feed-3-icon3 {
+    background-image: url(./assets/icons/monkey.svg);
 }
