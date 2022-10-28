@@ -12,7 +12,6 @@
     justify-content: flex-end;
     align-items: flex-end;
     height: 100%;
-    padding-right: 3px;
 }
 
 .hero-group {
@@ -23,16 +22,16 @@
     gap: 60px;
     width: 500px;
     padding-bottom: 100px;
-    padding-left: 3px;
+    padding-top: 3px;
 }
 
 .hero__title {
-    width: 501px;
+    width: 500px;
     height: 400px;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
-    font-size: 107px;
+    font-weight: 700;
+    font-size: 106px;
     line-height: 75%;
     color: #FFFFFF;
     text-align: center;
@@ -58,4 +57,37 @@
 
 .hero__button {
     text-align: center;
+}
+
+.backstage {
+    padding: 139px 0 90px 0;
+    background-image: url(./assets/images/flower_foto1.png);
+    background-position: center right 0;
+    background-repeat: no-repeat;
+}
+
+.backstage-block {
+    display: flex;
+    align-items: center;
+    gap: 87px;
+}
+
+.backstage-block__image {
+    min-width: 615px;
+    height: 403px;
+    background-image: url(./assets/images/bamboo-cap.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backstage-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.backstage-group .subtitle {
+    margin-top: 40px;
+    margin-bottom: 15px;
 }
