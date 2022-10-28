@@ -99,3 +99,250 @@
 .backstage-group h2 {
     margin-bottom: 4px;
 }
+
+
+
+.animals_cards {
+    padding: 88px 0 100px 0;
+    background: url(./assets/images/strelitzia.png) right bottom,
+        url(./assets/images/palm_foto.png) left bottom;
+    background-repeat: no-repeat
+}
+
+.animals-gallery {
+    overflow: hidden;
+}
+
+.animals-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.animals-block__buttons {
+    position: absolute;
+    top: 402px;
+    left: -81px;
+    display: flex;
+    justify-content: space-between;
+    width: 1322px;
+}
+
+.animals-block__right-btn,
+.animals-block__left-btn {
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 62px;
+    border: none;
+    width: 62px;
+}
+
+.animals-block__right-btn {
+    background-image: url(./assets/icons/arrow-right.svg), var(--orange-gr);
+}
+
+.animals-block__left-btn {
+    background-image: url(./assets/icons/arrow-left.svg), var(--orange-gr);
+}
+
+.animals-block__right-btn:hover {
+    background-image: url(./assets/icons/arrow-right.svg), var(--dark-orange-gr);
+    transform: scale(1.05);
+}
+
+.animals-block__left-btn:hover {
+    background-image: url(./assets/icons/arrow-left.svg), var(--dark-orange-gr);
+    transform: scale(1.05);
+}
+
+.animals-block__right-btn:active {
+    background-image: url(./assets/icons/arrow-right.svg), var(--green);
+    transform: scale(1.1);
+}
+
+.animals-block__left-btn:active {
+    background-image: url(./assets/icons/arrow-left.svg), var(--green);
+    transform: scale(1.1);
+}
+
+.animals-block__right-btn:disabled {
+    background-image: url(./assets/icons/arrow-right.svg), var(--gray);
+    transform: scale(0.8);
+}
+
+.animals-block__left-btn:disabled {
+    background-image: url(./assets/icons/arrow-left.svg), var(--gray);
+    transform: scale(0.8);
+}
+
+.animals-block__left-btn .animals-gallery {
+    overflow: hidden;
+}
+
+.cards-block {
+    position: relative;
+    left: -1189px;
+    display: flex;
+    gap: 30px;
+    width: 3537px;
+    transition: 1s;
+}
+
+.slider-left,
+.slider-right,
+.slider-center {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+    width: 1159px;
+}
+
+.animal-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    width: 366px;
+    height: 426px;
+    background-color: #FFFFFF;
+    border: 1px solid #FE9013;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.animal-img {
+    width: 100%;
+    height: 368px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.animal-1 {
+    background-image: url(./assets/images/photo-card1.jpg);
+}
+
+.animal-2 {
+    background-image: url(./assets/images/photo-card2.jpg);
+}
+
+.animal-3 {
+    background-image: url(./assets/images/photo-card3.jpg);
+}
+
+.animal-4 {
+    background-image: url(./assets/images/photo-card4.jpg);
+}
+
+.animal-5 {
+    background-image: url(./assets/images/photo-card5.jpg);
+}
+
+.animal-6 {
+    background-image: url(./assets/images/photo-card6.jpg);
+}
+
+.animal-card-group {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 8px 0 16px;
+    transition: 0.5s;
+}
+
+.animal-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.animal {
+    color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.habitat {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+}
+
+.food-logo {
+    width: 48px;
+    height: 38px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.predator {
+    background-image: url(./assets/icons/meet-fish_icon.svg);
+    margin-top: -6px;
+    z-index: 1;
+}
+
+.herbivore {
+    background-image: url(./assets/icons/banana-bamboo_icon.svg);
+    z-index: 1;
+}
+
+.choose-bun {
+    align-self: center;
+}
+
+.card:before,
+.card:after {
+    content: '';
+    transform: scale(0);
+    transform-origin: bottom left;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20%;
+    z-index: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+.card:before {
+    background: var(--yellow);
+    width: 140%;
+    height: 140%;
+    opacity: 0.7;
+}
+
+.card:after {
+    background: var(--orange-gr);
+    width: 200%;
+    height: 200%;
+}
+
+.card:hover:before,
+.card:hover:after {
+    transform: scale(1);
+}
+
+.card:hover .animal-card-group {
+    top: -30px;
+    z-index: 500;
+    transition: 0.7s;
+    font-size: 180%;
+    background-color: var(--yellow);
+}
+
+.card:hover .food-logo {
+    opacity: 0;
+}
