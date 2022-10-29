@@ -30,7 +30,7 @@
                         <nav class="header__nav nav">
                             <ul class="nav__list list-reset">
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link" id="about">About</a>
+                                    <a href="#about" class="nav__link current-page" id="about">About</a>
                                 </li>
                                 <li class="nav__item">
                                     <a href="#" class="nav__link">Map</a>
@@ -48,7 +48,8 @@
                         </nav>
                         <div class="designed">
                             <a class="designed-link"
-                                href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks">Designed by
+                                href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"
+                                target="_blank">Designed by
                                 ©</a>
                         </div>
                     </div>
@@ -62,7 +63,7 @@
                             <div class="hero__circle"></div>
                             <div class="hero__title">Watch your <span class="hero__title_accent">favorite</span> animal
                                 online</div>
-                            <button class="button hero__button">watch online</button>
+                            <button class="button hero__button">Watch online</button>
                         </div>
                     </div>
             </section>
@@ -355,18 +356,84 @@
                             </div>
                         </div>
                         <input class="testimonials-line_scroll" type="range" min="0" max="7" value="0">
-                        <button class="button testimonials-feedback_btn">leave feedback</button>
+                        <button class="button testimonials-feedback_btn">Leave feedback</button>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
             <div class="container">
-                <div class="logo">
-                    <img src="./assets/images/logo.png" alt="PetStory logo">
-                    <h1 hidden>PetStory online</h1></a>
+                <div class="footer-block">
+                    <div class="footer-donate-block">
+                        <div class="logo">
+                            <a href="#about">
+                                <img src="./assets/images/logo.png" alt="PetStory logo">
+                                <h1 hidden>PetStory online</h1>
+                            </a>
+                        </div>
+                        <button class="button footer-donate_btn">
+                            <a href="#">Donate for volunteers</a>
+                        </button>
+                    </div>
+                    <div class="footer-email-block">
+                        <h4>Subscribe to our news</h4>
+                        <form class="form footer-subscribe-form" action="#">
+                            <label class="form__label">
+                                <input class="footer-email" type="email" value="" title="E-mail"
+                                    placeholder="Enter your email" required>
+                            </label>
+                            <button class="footer-email_btn" type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="footer-socials-block">
+                        <div class="footer-socials">
+                            <a href="https://ru-ru.facebook.com" target="_blank">
+                                <div class="socials-icon facebook-icon"></div>
+                                <p class="social-title">Facebook</p>
+                            </a>
+                        </div>
+                        <div class="footer-socials">
+                            <a href="https://twitter.com " target="_blank">
+                                <div class="socials-icon twitter-icon"></div>
+                                <p class="social-title">Twitter</p>
+                            </a>
+                        </div>
+                        <div class="footer-socials">
+                            <a href="https://instagram.com" target="_blank">
+                                <div class="socials-icon instagram-icon"></div>
+                                <p class="social-title">Instagram</p>
+                            </a>
+                        </div>
+                        <div class="footer-socials">
+                            <a href="https://www.youtube.com" target="_blank">
+                                <div class="socials-icon youtube-icon"></div>
+                                <p class="social-title">YouTube</p>
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="footer__nav nav">
+                        <ul class="nav__list list-reset">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link  current-page" id="about">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Map</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Zoos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer-designed-block">
+                        <p>Designed by Alisa Samborskaya</p>
+                        <p>©RSSchool & ©Yem Digital 2021</p>
+                    </div>
                 </div>
             </div>
+    </div>
     </div>
     </footer>
     </div>

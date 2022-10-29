@@ -22,12 +22,11 @@
     gap: 60px;
     width: 500px;
     padding-bottom: 100px;
-    padding-top: 3px;
-    padding-left: 5px;
+    padding-top: 4px;
 }
 
 .hero__title {
-    width: 500px;
+    width: 600px;
     height: 400px;
     font-family: 'Roboto';
     font-style: normal;
@@ -43,8 +42,8 @@
 .hero__circle {
     content: '';
     position: absolute;
-    top: -74px;
-    left: -73px;
+    top: -69px;
+    left: -74px;
     width: 465px;
     height: 465px;
     background: var(--orange-gr);
@@ -58,28 +57,26 @@
 
 .hero__button {
     text-align: center;
-    padding-bottom: 8px;
-    padding-left: 3px;
 }
 
 .backstage {
-    padding: 128px 0 90px 0;
+    padding: 139px 0 90px 0;
     background-image: url(./assets/images/flower_foto1.png);
-    background-position: bottom 26px right;
+    background-position: center right -40px;
     background-repeat: no-repeat;
 }
 
 .backstage-block {
     display: flex;
     align-items: center;
-    gap: 87px;
+    gap: 85px;
 }
 
 .backstage-block__image {
     min-width: 609px;
-    height: 411px;
+    height: 403px;
     background-image: url(./assets/images/bamboo-cap.png);
-    background-position: center bottom 7px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -88,23 +85,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 10px;
+    gap: 20px;
 }
 
 .backstage-group .subtitle {
-    margin-top: 37px;
-    margin-bottom: 15px;
-}
-
-.backstage-group h2 {
-    margin-bottom: 4px;
+    display: block;
+    margin-top: 34px;
+    margin-bottom: 13px;
 }
 
 
 .animals_cards {
     padding: 88px 0 100px 0;
-    background: url(./assets/images/strelitzia.png) right bottom,
-        url(./assets/images/palm_foto.png) left bottom;
+    background: url(./assets/images/strelitzia.png) right -41px bottom,
+        url(./assets/images/palm_foto.png) left -41px bottom;
     background-repeat: no-repeat
 }
 
@@ -274,7 +268,7 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    padding: 0 8px 0 16px;
+    padding: 0 8px 6px 15px;
     transition: 0.5s;
 }
 
@@ -335,7 +329,7 @@
     top: 60%;
     right: -40%;
     z-index: 0;
-    transition: all ease-in 0.5s;
+    transition: all ease-in-out 0.5s;
 }
 
 .card:after {
@@ -345,7 +339,7 @@
     z-index: 200;
 }
 
-.card:hover:before,
+
 .card:hover:after {
     transform: scale(1);
 }
@@ -378,6 +372,7 @@
 }
 
 .pick-and-feed-block h3 {
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
@@ -397,7 +392,7 @@
 
 .pick-and-feed-group a {
     text-decoration: underline;
-    text-decoration-color: #FE9013;
+    text-decoration-color: var(--orange);
     text-underline-offset: 7px;
 }
 
@@ -409,10 +404,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 130%;
-}
-
-.pick-and-feed-widjet-block {
-    margin-bottom: 10px;
 }
 
 .pick-and-feed-widjets {
@@ -461,17 +452,18 @@
 .testimonials {
     padding: 140px 0 180px 0;
     background-image: url(./assets/images/leaf_foto.png);
-    background-position: right bottom -130px;
+    background-position: right -40px bottom -134px;
     background-repeat: no-repeat;
 }
 
 .testimonials-blok {
     display: flex;
     flex-direction: column;
-    gap: 21px;
+    gap: 22px;
 }
 
 .testimonials-blok h3 {
+    margin-top: 0;
     margin-bottom: 26px;
 }
 
@@ -504,7 +496,7 @@
     gap: 10px;
     width: 264px;
     height: 386px;
-    padding: 12px 13px 19px 14px;
+    padding: 14px 13px 19px 15px;
     background-color: var(--light_gray);
     border-radius: 20px;
 }
@@ -562,7 +554,7 @@
     align-self: center;
     width: 599px;
     height: 6px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .testimonials-line_scroll::before {
@@ -591,7 +583,7 @@ input[type=range] {
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 36px;
-    width: 90px;
+    width: 115px;
     height: 6px;
     background: var(--orange);
     border-radius: 5px;
