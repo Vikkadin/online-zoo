@@ -433,3 +433,7 @@ form:valid .footer-email_btn:active {
     font-weight: 400;
     color: #FFFFFF;
 }
+
+.footer-donate_btn {
+    padding-top: 14px;
+}
