@@ -1,24 +1,335 @@
-body {
-    margin: 0;
+h2,
+h3 {
+    color: var(--orange);
+}
+
+
+.hero-container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../assets/images/panda-donate.jpg);
+    margin-top: 75px;
+    height: 392px;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    margin-bottom: 9px;
+}
+
+.donate {
+    background: var(--light-orange_gr);
+}
+
+
+.donate-block {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 180px 0;
+}
+
+.donate-block h3 {
+    text-align: start;
+}
+
+.donate-block h2 {
     text-align: center;
+    padding-right: 12px;
 }
 
-h2 {
-    margin-top: 0;
-    padding-top: 15%;
-    font-family: "Roboto", sans-serif;
-    font-size: 98px;
-    color: #333B41;
+.donate-group {
+    color: #FFFFFF;
 }
 
-.image::before {
-    content: '';
+.donate-text {
+    line-height: 140%;
+    margin-bottom: 47px;
+    padding-right: 5px;
+    font-weight: 500;
+}
+
+.donate-block__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 92px 62px 92px;
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    margin-top: 22px;
+}
+
+.donate-block__form h4 {
+    margin-top: 12px;
+}
+
+.diet-days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    margin: 48px 16px 37px 0;
+}
+
+.diet-days-group {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 57px;
+}
+
+.diet-days-number {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.diet-days-multiply {
+    width: 14px;
+    height: 14px;
+    background-image: url(../assets/icons/x_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 47px;
+    margin-top: 30px;
+}
+
+.diet-days-animal-icon {
+    width: 284px;
+    height: 246px;
+    background-image: url(../assets/icons/panda.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.donate-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.donate-scale-bg {
+    height: 27px;
+    background: #404950;
+    border-radius: 2px;
+}
+
+.donate-scale-line {
+    margin: 12px 35px 0 31px;
+    height: 2px;
+    background: #72828E;
+}
+
+.donate-scale-steps {
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    margin: -6px 30px 0 26px;
+}
+
+.donate-scale-steps li {
+    width: 10px;
+    height: 10px;
+    background: var(--yellow);
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.current-step {
+    position: relative;
+    outline: 2px solid var(--orange);
+    outline-offset: 5px;
+}
+
+.current-step::after {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
-    z-index: -1;
-    background: url(../assets/images/desktop_donate.jpg);
-    opacity: 0.5;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+    outline: 2px solid var(--orange);
+    outline-offset: 13px;
+}
+
+.amount3 {
+    color: var(--orange);
+}
+
+input[type="range"] {
+    height: 2px;
+    margin: -40px 24.55px 0 20.5px;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 21px;
+    width: 21px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    cursor: pointer;
+}
+
+.donation-amounts-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0 30px 0;
+}
+
+.donation-amount {
+    display: flex;
+    align-items: flex-end;
+    width: 69px;
+}
+
+.donation-amount div {
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 80%;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--black-blue);
+}
+
+
+.donation-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1px;
+}
+
+.donation-block-container {
+    position: relative;
+}
+
+input[type="number"] {
+    width: 267px;
+    height: 54px;
+    padding: 0 30px 0 9px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="number"]::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #929699;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"]:invalid {
+    color: var(--red);
+    border: 1px solid var(--red);
+}
+
+input[type="number"]:invalid+label {
+    color: var(--red);
+}
+
+input[type="number"]:focus:valid {
+    color: var(--green);
+    border: 1px solid var(--green);
+}
+
+input[type="number"]:focus:valid+label {
+    color: var(--green);
+}
+
+.donation-input {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 21px;
+    margin: 0 12px 5px 0;
+}
+
+.dollar-sign {
+    position: absolute;
+    top: 15px;
+    right: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #929699;
+}
+
+.donation-period-group {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 21px;
+    margin: 0 12px 5px 0;
+}
+
+.donation-period {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="radio"],
+.feed-days-period-item:hover label {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    left: 0px;
+    top: 2px;
+    border: 1px solid var(--orange);
+    background-color: transparent;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="radio"]:checked {
+    border: 1px solid var(--green);
+    background-color: var(--green);
+}
+
+.donation-form-btn {
+    align-self: center;
+    margin: 0 0 20px 5px;
+}
+
+.donation-caption {
+    margin-left: 5px;
+    text-align: center;
+    color: var(--black-blue);
 }
