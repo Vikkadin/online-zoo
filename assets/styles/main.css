@@ -59,6 +59,12 @@ a {
     text-decoration: none;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 p {
     margin: 0;
 }
@@ -135,12 +141,6 @@ p {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-}
-
-.list-reset {
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 .header__block {
