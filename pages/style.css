@@ -333,3 +333,79 @@ input[type="radio"]:checked {
     text-align: center;
     color: var(--black-blue);
 }
+
+@media (max-width: 1440px) {
+
+    .hero-container {
+        height: 396px;
+    }
+
+    .donate {
+        padding-bottom: 29px;
+    }
+
+    .donate-block {
+        padding-bottom: 0px;
+    }
+
+    .donate-block h4 {
+        margin-bottom: 29px;
+        padding-right: 100px;
+    }
+
+    .donate-block p {
+        margin-bottom: 46px;
+        padding-right: 6px;
+    }
+
+    .donate-block h3 {
+        margin-bottom: 40px;
+    }
+
+    .donate-block__form {
+        gap: 10px;
+        padding: 20px 48px 45px 49px;
+        margin-top: 0;
+    }
+
+    .donate-block__form h2 {
+        margin: 0 4px 1px 0;
+        text-align: center;
+    }
+
+    .donate-block__form h4 {
+        margin-top: 0px;
+        padding-right: 0px;
+    }
+
+    .diet-days {
+        gap: 16px;
+        margin: 20px 14px 37px 0;
+    }
+
+    .diet-days-text {
+        padding-bottom: 5px;
+    }
+
+    .donate-form {
+        padding: 0 16px;
+    }
+
+    .donate-scale-steps {
+        margin: -6px 10px 0 11.5px;
+    }
+
+    .feed-days-range-line {
+        margin: 12px 13px 0 13px;
+        height: 2px;
+        background: #72828E;
+    }
+
+    input[type="range"] {
+        margin: -40px 4.5px 0 6.4px;
+    }
+
+    .footer-email-block {
+        padding-right: 30px;
+    }
+}
