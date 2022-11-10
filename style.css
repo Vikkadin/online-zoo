@@ -1,5 +1,4 @@
 .hero-container {
-    min-height: 100vh;
     height: 780px;
     background-position: center;
     background-repeat: no-repeat;
@@ -780,5 +779,85 @@ input[type=range]::-webkit-slider-runnable-track {
 
     .footer__nav {
         margin-right: 27px;
+    }
+
+    @media (max-width: 980px) {
+        .hero-container {
+            height: 373px;
+        }
+
+        .hero-block {
+            padding-top: 80px;
+        }
+
+        .hero-group {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        .hero__title {
+            width: 255.64px;
+            height: 204.38px;
+            font-size: 54.2894px;
+            margin-right: -3px;
+        }
+
+        .hero__circle {
+            top: -39px;
+            left: 311px;
+            width: 237.6px;
+            height: 237.6px;
+        }
+
+        .hero__button {
+            margin-top: -8px;
+            align-self: flex-start;
+        }
+    }
+
+    .backstage {
+        padding: 60px 0 36px 0;
+        background-image: url(./assets/images/flower_foto1.png);
+        background-position: right -5px;
+    }
+
+    .backstage-block__image {
+        display: none;
+    }
+
+    .backstage-group {
+        padding-right: 110px;
+    }
+
+    .backstage-group h2 {
+        margin-left: 4px;
+    }
+
+    .backstage-group .subtitle {
+        margin: 9px 0px 0px 4px;
+    }
+
+    .animals_cards {
+        padding: 42px 0 100px 0;
+        background: url(./assets/images/palm_foto_tablet.png) left bottom no-repeat,
+            url(./assets/images/strelitzia_tablet.png) right bottom no-repeat;
+    }
+
+    .animals-block {
+        gap: 59px;
+    }
+
+    .animals-gallery {
+        position: relative;
+        display: flex;
+        gap: 30px;
+        width: 640px;
+        transition: 1s;
     }
 }
