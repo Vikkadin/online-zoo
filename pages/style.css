@@ -408,4 +408,116 @@ input[type="radio"]:checked {
     .footer-email-block {
         padding-right: 30px;
     }
+
+    @media (max-width: 980px) {
+        .hero-container {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(../assets/images/panda-donate.jpg);
+            margin-top: 30px;
+            height: 340px;
+        }
+
+        .donate {
+            padding-bottom: 46px;
+        }
+
+        .donate-block {
+            padding-top: 30px;
+            padding-bottom: 0px;
+        }
+
+        .donate-block h4 {
+            margin-bottom: 18px;
+            padding-right: 0px;
+            font-size: 24px;
+            line-height: 120%;
+        }
+
+        .donate-block p {
+            margin-bottom: 30px;
+            padding-right: 0;
+        }
+
+        .donate-block h3 {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .donate-block__form {
+            padding: 30px 0 31px 0;
+            text-align: center;
+        }
+
+        .donate-block__form h2 {
+            margin-bottom: 11px;
+            text-align: center;
+            padding: 0;
+
+        }
+
+        .donate-amount-text {
+            padding-left: 10px;
+            margin-top: -6px;
+            text-align: start;
+            color: #000000;
+        }
+
+        .donate-form {
+            gap: 25px;
+            padding: 0;
+            margin-top: 0px;
+        }
+
+        .donate-scale-bg {
+            margin-top: -3px;
+        }
+
+        .donate-scale-steps {
+            margin: -6px 35px 0 35px;
+        }
+
+        .scale-step1,
+        .scale-step2,
+        .scale-step3 {
+            display: none;
+        }
+
+        .donation-amounts-group {
+            margin-left: 13px;
+        }
+
+        .amount1,
+        .amount2,
+        .amount3 {
+            display: none;
+        }
+
+        .feed-days-range-line {
+            margin: 12px 37px 0 37px;
+        }
+
+        .donation-period-group {
+            margin: 8px 19px 0 0;
+            gap: 50px;
+        }
+
+        .donation-form-btn {
+            margin: 5px 0 19px 0;
+        }
+
+        .donation-caption {
+            margin-left: 0;
+        }
+
+        input[type="range"] {
+            margin: -40px 30px 0 29px;
+        }
+
+        input[type="number"] {
+            width: 180px;
+            height: 42px;
+        }
+    }
 }
