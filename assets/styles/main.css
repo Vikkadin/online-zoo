@@ -475,6 +475,12 @@ form:valid .footer-email_btn:active {
 
 @media (max-width: 1440px) {
 
+    .logo-tablet,
+    .logo-footer,
+    .logo-mobile {
+        display: none;
+    }
+
     .container {
         width: 940px;
     }
