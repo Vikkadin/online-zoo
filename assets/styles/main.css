@@ -569,14 +569,14 @@ form:valid .footer-email_btn:active {
     }
 }
 
-@media (max-width: 638px) {
+@media (max-width: 639px) {
+
     .container {
         width: 300px;
     }
 
     .burger {
-        display: block;
-        margin-left: 46px;
+        margin: 0px 0px 0px 60px;
     }
 
     .header {
@@ -585,8 +585,12 @@ form:valid .footer-email_btn:active {
         height: 34px;
     }
 
+    .header .header__container {
+        margin: 0px 0px 0px 166px;
+    }
+
     .footer {
-        padding: 21px 0 20px 0;
+        padding: 18px 0 20px 0;
     }
 
     .footer-block {
@@ -616,7 +620,7 @@ form:valid .footer-email_btn:active {
         top: 56px;
         flex-direction: row;
         justify-content: center;
-        gap: 30px;
+        gap: 32px;
         width: 100%;
     }
 
