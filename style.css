@@ -1017,6 +1017,10 @@ input[type=range]::-webkit-slider-runnable-track {
 
 @media (max-width: 639px) {
 
+    .header__container {
+        margin: 0px 0px 0px 166px;
+    }
+
     .container {
         width: 300px;
     }
