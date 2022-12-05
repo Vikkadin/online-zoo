@@ -154,6 +154,19 @@ p {
     height: 52px;
 }
 
+.logo-burger {
+    display: none;
+    width: 47px;
+    height: 29px;
+    background-image: url(../icons/logo_desktop.svg);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.3s;
+}
+
 .burger {
     display: none;
     width: 24px;
@@ -169,6 +182,27 @@ p {
 
 .burger:hover {
     transform: scale(1.2);
+}
+
+.burger:active {
+    transform: scale(1);
+}
+
+.burger-open {
+    left: 0;
+}
+
+.page-fade {
+    position: fixed;
+    z-index: 300;
+    top: 34px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
 }
 
 .header__block {
@@ -516,13 +550,51 @@ form:valid .footer-email_btn:active {
         height: 29px;
     }
 
+    .logo_and_menu {
+        position: absolute;
+        flex-direction: column;
+        gap: 15px;
+        top: 34px;
+        left: 100%;
+        width: 100%;
+        padding: 10px 0 40px 10px;
+        color: #333B41;
+        background-color: #FFFFFF;
+        box-shadow: 5px 2px 5px 0 grey;
+        transition: 0.3s;
+    }
+
+    .nav-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 0 auto;
+        max-width: 640px;
+    }
+
     .nav-block {
-        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .designed {
+        padding-left: 0;
     }
 
     .burger {
         display: block;
         margin-left: 466px;
+    }
+
+    .logo-burger {
+        display: block;
     }
 
     .footer {
@@ -647,4 +719,27 @@ form:valid .footer-email_btn:active {
     .footer-designed-block {
         padding-right: 8px;
     }
+}
+
+/*----------------------------------------js-classes----------------------------------------*/
+
+.burger-open {
+    left: 0;
+}
+
+.burger-x {
+    background-image: url(../icons/burger_opened.svg);
+}
+
+/* .logo-fader {
+    opacity: 0;
+    pointer-events: none;
+} */
+
+.page-fader {
+    opacity: 1;
+}
+
+.displayed {
+    pointer-events: all;
 }
