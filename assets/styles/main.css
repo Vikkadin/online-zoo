@@ -145,7 +145,8 @@ p {
 
 .logo-tablet,
 .logo-footer,
-.logo-mobile {
+.logo-mobile,
+.logo-orange {
     display: none;
 }
 
@@ -239,23 +240,11 @@ p {
     text-underline-offset: 7px;
 }
 
-.burger {
-    display: none;
-    width: 24px;
-    height: 22px;
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-color: #000000;
-    border: none;
-    cursor: pointer;
-}
-
 .current-page {
     text-decoration: none;
     color: var(--orange);
     user-select: none;
 }
-
 
 .designed {
     padding-left: 436px;
