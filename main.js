@@ -127,3 +127,80 @@ slideRightBtn.addEventListener('click', () => {
         slideRightBtn.removeAttribute('disabled');
     })
 });
+
+/* testimonials slider */
+
+const testimonialsRange = document.querySelector('.testimonials-line_scroll');
+const testimonialsCards = document.querySelector('.testimonials-cards');
+const cardsList = document.querySelectorAll('.testimonial-card__frame');
+
+
+function testimonialsShuffle(width) {
+    testimonialsCards.style.left = `-${testimonialsRange.value * width}px`;
+}
+
+/* testimonials popup */
+const testimonialsPopup = document.querySelector('.testimonials-popup');
+const testimonialsPopupBox = document.querySelector('.testimonials-popup-block');
+const testimonialsPopupCloseBtn = document.querySelector('.testimonials-popup_btn');
+
+function togglePopup() {
+
+    testimonialsPopup.classList.add('popup-shown', 'displayed');
+    testimonialsPopupBox.innerHTML = this.innerHTML;
+
+}
+
+function closePopup() {
+
+    let target = this.target;
+
+    if (target === testimonialsPopup || target === testimonialsPopupCloseBtn) {
+        testimonialsPopup.classList.remove('popup-shown', 'displayed');
+    }
+
+}
+
+function closePopup(el) {
+
+    let target = el.target;
+
+    if (target === testimonialsPopup || target === testimonialsPopupCloseBtn) {
+        testimonialsPopup.classList.remove('popup-shown', 'displayed');
+    }
+
+}
+
+const desktop = window.matchMedia('(min-width: 1280px)');
+const tablet = window.matchMedia('(max-width: 1279px)');
+const mobile = window.matchMedia('(max-width: 980px)');
+
+function handleScreens() {
+    if (desktop.matches) {
+
+        testimonialsRange.addEventListener('input', () => testimonialsShuffle(300));
+
+        for (let item of cardsList) {
+            item.removeEventListener('click', togglePopup);
+        }
+
+    } else if (tablet.matches && !mobile.matches) {
+
+        testimonialsRange.addEventListener('input', () => testimonialsShuffle(325));
+
+        for (let item of cardsList) {
+            item.removeEventListener('click', togglePopup);
+        }
+
+    } else if (mobile.matches) {
+
+        for (let item of cardsList) {
+            item.addEventListener('click', togglePopup);
+        }
+
+    }
+}
+
+testimonialsPopup.addEventListener('click', (el) => closePopup(el));
+window.addEventListener('resize', handleScreens);
+handleScreens();
