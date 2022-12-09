@@ -143,6 +143,14 @@ p {
     height: 100%;
 }
 
+
+.nav-wrapper {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+
 .logo-tablet,
 .logo-footer,
 .logo-mobile,
@@ -552,6 +560,7 @@ form:valid .footer-email_btn:active {
         box-shadow: 5px 2px 5px 0 grey;
         transition: 0.3s;
     }
+
 
     .nav-wrapper {
         display: flex;
